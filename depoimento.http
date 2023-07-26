@@ -1,0 +1,34 @@
+### Cria Depoimento
+POST http://localhost:3000/depoimentos
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "depoimento": "Teste",
+  "foto": "https://cursos.alura.com.br/assets/images/logos/logo-alura.svg"
+}
+
+### Pega Depoimento
+GET http://localhost:3000/depoimentos/1
+Accept: application/json
+
+### Pega todos os depoimentos
+GET http://localhost:3000/depoimentos
+Accept: application/json
+
+### Deleta Depoimento
+DELETE http://localhost:3000/depoimentos/1
+Content-Type: application/json
+
+### Atualiza Depoimento
+PUT http://localhost:3000/depoimentos/1
+Content-Type: application/json
+
+{
+  "nome": "Teste2",
+  "depoimento": "Teste2",
+  "foto": "https://cursos.alura.com.br/assets/images/logos/logo-alura.svg"
+}
+### Pega depoimentos para home
+GET http://localhost:3000/depoimentos-home
+Accept: application/json
